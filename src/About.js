@@ -1,11 +1,23 @@
 import { Component } from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+import { ListGroup } from "react-bootstrap";
 
-class Profile extends Component {
+class About extends Component {
 
   render() {
     /* TODO: render information about the developers */
-    return <p>Profile page coming soon</p>
+    return (
+      <>
+        <Header />
+        <ListGroup>
+          <ListGroup.Item>Main Developer : AhmedAwamleh</ListGroup.Item>
+          <ListGroup.Item>Regards Code Fellow</ListGroup.Item>
+        </ListGroup>
+        <Footer />
+      </>
+    );
   }
 };
 
-export default Profile;
+export default About;
