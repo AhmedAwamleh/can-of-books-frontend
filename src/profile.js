@@ -12,7 +12,7 @@ function Profile() {
         <>
             <Header />
             {isAuthenticated &&
-                <Card style={{ width: '18rem' }}>
+                <Card style={{ width: '20rem' }}>
                     <Card.Img variant="top" src={`${user.picture}`} alt="profile" />
                     <Card.Body>
                         <Card.Title>{user.name}</Card.Title>
